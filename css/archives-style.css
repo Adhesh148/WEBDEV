@@ -8,7 +8,7 @@
 
 #btn {
   position: fixed;
-  z-index: 5;
+  z-index: 150;
   top: 15px;
   left: 15px;
   cursor: pointer;
@@ -50,7 +50,7 @@
 
 #box {
   position: fixed;
-  z-index: 4;
+  z-index: 130;
   overflow: auto;
   top: 0px;
   left: -275px;
