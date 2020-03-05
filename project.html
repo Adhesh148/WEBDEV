@@ -2,92 +2,263 @@
 <html lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Project Proposal</title>
+	<title>Project Proposal</title>
 
-  <!-- Imported CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
-    integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+	<!-- Imported CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/styles.css">
+	<style>
+		html {
+			padding: 0;
+		}
+
+		body {
+			padding: 0;
+			font-family: 'Source Sans Pro';
+		}
+
+		.container-cs h1 {
+			font-size: 4em;
+			color: #333;
+			-webkit-text-shadow: 0 2px 1px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.7);
+			-moz-text-shadow: 0 2px 1px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.7);
+			text-shadow: 0 2px 1px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.7);
+			word-spacing: 16px;
+		}
+
+		.container-cs p {
+			font-size: 1.4em;
+			font-weight: bold;
+			color: #222;
+			text-shadow: 0 0 40px #FFFFFF, 0 0 30px #FFFFFF, 0 0 20px #FFFFFF;
+		}
+
+		.container-cs {
+			margin: 0;
+			position: relative;
+			top: 0;
+			bottom: 0;
+			width: 98vw;
+			height: 100vh;
+			background: url('');
+			background-size: cover;
+		}
+
+		.wrapper {
+			width: 100%;
+			min-height: 100%;
+			height: auto;
+			display: table;
+		}
+
+		.content {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		.item {
+			width: auto;
+			height: auto;
+			margin: 0 auto;
+			text-align: center;
+			padding: 8px;
+		}
+
+		@media only screen and (min-width: 800px) {
+			.container-cs h1 {
+				font-size: 6em;
+			}
+
+			.container-cs p {
+				font-size: 1.6em;
+			}
+		}
+
+		@media only screen and (max-width: 320px) {
+			.container-cs h1 {
+				font-size: 2em;
+			}
+
+			.container-cs p {
+				font-size: 1.2em;
+			}
+		}
+
+		.arrows {
+			width: 60px;
+			height: 72px;
+			position: absolute;
+			left: 50%;
+			margin-left: -30px;
+			bottom: 20px;
+		}
+
+		.arrows path {
+			stroke: black;
+			fill: transparent;
+			stroke-width: 1px;
+			animation: arrow 2s infinite;
+			-webkit-animation: arrow 2s infinite;
+		}
+
+		@keyframes arrow {
+			0% {
+				opacity: 0
+			}
+
+			40% {
+				opacity: 1
+			}
+
+			80% {
+				opacity: 0
+			}
+
+			100% {
+				opacity: 0
+			}
+		}
+
+		@-webkit-keyframes arrow
+
+		/*Safari and Chrome*/
+			{
+			0% {
+				opacity: 0
+			}
+
+			40% {
+				opacity: 1
+			}
+
+			80% {
+				opacity: 0
+			}
+
+			100% {
+				opacity: 0
+			}
+		}
+
+		.arrows path.a1 {
+			animation-delay: -1s;
+			-webkit-animation-delay: -1s;
+			/* Safari 和 Chrome */
+		}
+
+		.arrows path.a2 {
+			animation-delay: -0.5s;
+			-webkit-animation-delay: -0.5s;
+			/* Safari 和 Chrome */
+		}
+
+		.arrows path.a3 {
+			animation-delay: 0s;
+			-webkit-animation-delay: 0s;
+			/* Safari 和 Chrome */
+		}
+	</style>
 </head>
 
-<body style="margin-top: 20px; margin-left: 20px; margin-right: 10px; margin-bottom: 30px;">
+<body>
 
-	<div>
-		<h1 align = "left"><font color ="green">Live</font> Time Table</h1>
+	<div class="container-cs">
+		<div class="wrapper">
+			<div class="content">
+				<div class="item">
+					<h1>COMING SOON</h1>
+					<p>This website is under construction.</p>
+					<svg class="arrows">
+						<path class="a1" d="M0 0 L30 32 L60 0"></path>
+						<path class="a2" d="M0 20 L30 52 L60 20"></path>
+						<path class="a3" d="M0 40 L30 72 L60 40"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
 	</div>
-	<hr>
-	<br>
 
-	<div>
+	<hr>
+
+	<div class="container">
+		<h1 class="display-4"><span style="color: green;">Live</span> Time Table</h1>
 		<h2>About the Project</h2>
-		<p><b>Live Time Table</b> allows students to view their everyday schedule including:
+		<p><strong>Live Time Table</strong> allows students to view their everyday schedule including:
 			<ol>
 				<li>Regular Classes (excluding cancelled ones)</li>
 				<li>Extra Classes planned for the week</li>
 				<li>Scheduled Events such as:
-					<ol>
-					<li>Talks</li>
-					<li>Workshops</li>
-					<li>Cultural or Technical Fests</li>
-				</ol>
+					<ul>
+						<li>Talks</li>
+						<li>Workshops</li>
+						<li>Cultural or Technical Fests</li>
+					</ul>
 				</li>
 			</ol>
-			A Live Time Table would help the student better plan his <b>time</b> and also keep track of events ocurring in the college.
+			A Live Time Table would help the student better plan his <b>time</b> and also keep track of events ocurring
+			in the college.
 		</p>
 	</div>
 
-	<div>
+	<div class="container">
 		<h2>Features</h2>
 		We have planned to implement the following features:
 		<h4>Login</h4>
 		<ul>
-		<li>
-		<h4>Student User:</h4>
-		<ol>
-			<li>View of the Live Time Table which includes:
+			<li>
+				<h4>Student User:</h4>
 				<ol>
-					<li>Regular Classes</li>
-					<li>Additional Classes as updated by the Faculty</li>
-					<li>Also excludes cancelled classes</li>
+					<li>View of the Live Time Table which includes:
+						<ul>
+							<li>Regular Classes</li>
+							<li>Additional Classes as updated by the Faculty</li>
+							<li>Also excludes cancelled classes</li>
+						</ul>
+					</li>
+					<li>Events scheduled would be integrated with the daily time table</li>
+					<li>Student weekly statistics</li>
 				</ol>
-			</li>
-			<li>Events scheduled would be integrated with the daily time table</li>
-			<li>Student weekly statistics</li>
-		</ol> 
-		<li>
-		<h4>Faculty User:</h4>
-		<ol>
-			<li>View of the Student Live Time Table</li>
-			<li>View of the Faculty Live Time Table</li>
-			<li>Schedule Class/Event at an avialable time and location</li>
-			<li>Cancel Scheduled Class/Event (if faculty has required privileges for the particular class/event)</li>
-		</ol> 
+			<li>
+				<h4>Faculty User:</h4>
+				<ol>
+					<li>View of the Student Live Time Table</li>
+					<li>View of the Faculty Live Time Table</li>
+					<li>Schedule Class/Event at an avialable time and location</li>
+					<li>Cancel Scheduled Class/Event (if faculty has required privileges for the particular class/event)
+					</li>
+				</ol>
 	</div>
-		</ul>
+	</ul>
+	</div>
 
-	
-</div>
-
-<div>
-	<h2>Use Case</h2>
-	Consider the situation that a professor for the COE/CED-18 decides to cancel the 9:00 A.M class on a particular day. This creates a free slot at 9:00 AM. Considering the traditional timetable system no other professor would know of the free slot unless informed by the CR. The traditional system demands the need for human-human communication which could be unreliable at certain times.
-	Our system eliminates the need for human-human communication. An update/deletion on the time time table would be immediately reflected online. This enables the professors and students to plain their day accordingly. For instace, the professor taking the 8:00 A.M. class could shift his class to this interval without the need for any intimidation by the CR. It also saves on sending hundreds of mails by allowing students to view the updated time table live.
-</div>
-<hr>
-	<div>
-		<b>Please Note:</b> The project is still under its early stages, therefore some features might be added/deleted depending on the time and other constraints.
+	<div class="container">
+		<h2>Use Case</h2>
+		Consider the situation that a professor for the COE/CED-18 decides to cancel the 9:00 A.M class on a particular
+		day. This creates a free slot at 9:00 AM. Considering the traditional timetable system no other professor would
+		know of the free slot unless informed by the CR. The traditional system demands the need for human-human
+		communication which could be unreliable at certain times.
+		Our system eliminates the need for human-human communication. An update/deletion on the time time table would be
+		immediately reflected online. This enables the professors and students to plain their day accordingly. For
+		instace, the professor taking the 8:00 A.M. class could shift his class to this interval without the need for
+		any intimidation by the CR. It also saves on sending hundreds of mails by allowing students to view the updated
+		time table live.
+	</div>
+	<br>
+	<br>
+	<br>
+	<div class="container" style="margin-bottom: 5rem;">
+		<b>Please Note:</b> The project is still under its early stages, therefore some features might be added/deleted
+		depending on the time and other constraints.
 		<br>Some more details may be further added.
 	</div>
 
 
 </body>
+
 </html>
